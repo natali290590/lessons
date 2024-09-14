@@ -1,0 +1,41 @@
+@import url("reset.css");
+* {
+    color: green;
+}
+p {
+    color: chocolate;
+}
+h1 {
+    color: blue;
+}
+.list,
+.part {
+    color: crimson;
+}
+.caption {
+    color: coral;
+}
+#city {
+    color: darkgoldenrod;
+}
+.text { 
+    color: rgb(139, 0, 42);
+}
+.text-another {
+    color: rgb(81, 165, 42);
+}
+.text.visitable {
+    color: rgb(55, 56, 128);
+}
+[class*="res"] {
+	color: blue;
+}
+.info h4 {
+    color: darkorchid;
+}
+.part h3 {
+    color: rgb(255, 0, 0);
+}
+.part .resour {
+    color: darkslategray;
+}
