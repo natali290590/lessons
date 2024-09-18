@@ -28,7 +28,7 @@
 @import url("reset.css");
 
 /* Блок 1 */
-.part-01 {
+.part-one {
    font-family: 'Work Sans', sans-serif;
 }
 .professional-portfolio {
@@ -45,7 +45,7 @@
 }
 
 /* Блок 2 */
-.part-02 {
+.part-two {
    font-family: 'DM Sans', sans-serif;
 }
 .business-present {
@@ -62,7 +62,7 @@
 }
 
 /* Блок 3 */
-.part-03 {
+.part-three {
    font-family: 'Roboto', sans-serif;
 }
 .introduce-product {
@@ -99,7 +99,7 @@ body {
    text-align: right;
 }
 
-.part-04 {
+.part-article {
    font-size: 18px;
    font-weight: 300;
    line-height: 1.2;
