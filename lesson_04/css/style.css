@@ -141,6 +141,7 @@ h3 {
 .part-characteristic {
    color: orangered;
    text-align: justify;
+   word-spacing: 11px;
 }
 .character{
    color: blue;
@@ -152,7 +153,6 @@ h3 {
    font-size: 12px;
    font-weight: 400;
    line-height: 1.7;
-   word-spacing: 11px;
    white-space: nowrap;
 }
 .link {
