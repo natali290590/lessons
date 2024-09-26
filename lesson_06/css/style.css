@@ -57,6 +57,7 @@ body {
    padding-block: 20px;
    font-family: 'Epilogue', sans-serif;
    background: #FDF0E9;
+   font-size: 0;
 }
 .container-one-content{
    margin: 0 168px 0 135px;
@@ -189,7 +190,7 @@ body {
    radial-gradient(circle, rgba(0,212,255,1) 25%, rgba(0,255,34,1) 42%, rgba(224,255,0,1) 68%, rgba(255,141,0,1) 86%);
    box-shadow: -5px -10px 10px 10px #0acc1afa;
    margin-right: 20px;
-   outline: 3px solid black; 
+   outline: 2px solid black; 
 }
 .borders {
 	display: inline-block;
