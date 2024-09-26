@@ -104,14 +104,14 @@ body {
 
 /* block 2 */
 .container-two {
-   max-width: 1920px;
    font-family: 'Monrope', sans-serif;
    background-color: #141414;
    margin-bottom: 50px;
    padding-bottom: 15px;
 }
 .container-two-background {
-   min-height: 1092px;
+   width: 100%;
+   min-height: 860px;
    background: url("../img/abstract.png") center / 470px no-repeat,
    /* Градієнт взяла з фігми */
    linear-gradient(180deg, #141414 0%, rgba(20, 20, 20, 0.00) 100%),
