@@ -429,9 +429,6 @@ main {
    font-size: 15px;
    line-height: 1.5;
 }
-.practice-text p:nth-child(2) {
-   color: #e06919;
-}
 .cod {
    max-width: 800px;
    background-color: rgb(197, 196, 196);
