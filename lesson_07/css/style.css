@@ -407,7 +407,7 @@ main {
 }
 
 /* Block 5 */
- .practice {
+.practice {
    background-color: rgb(209, 150, 203);
    padding: 30px;
    display: none; 
@@ -421,7 +421,6 @@ main {
    max-width: 1200px;
    margin: 0 auto;
 }
-
 .practice-text:has(mark) {
    font-family: 'Roboto', sans-serif;
    font-size: 18px;
@@ -440,15 +439,13 @@ main {
 .cod span{
    color: rgb(79, 124, 20);
 }
-.cod li:not(:last-child) {
+.cod p:not(:last-child) {
 	margin-bottom: 8px;
  }
-
 mark {
    background-color: rgb(139, 137, 137);
    padding-inline: 8px;
 }
-
  .practice-text h2:first-child {
 	text-transform: uppercase;
    font-size: 34px;
@@ -470,7 +467,7 @@ mark {
  .practice-text p:not(:last-child) {
 	margin-bottom: 17px;
  }
- .practice-text p:first-of-type {
+ .cod p:first-of-type {
 	font-size: 14px;
    line-height: 1.7;
    color:#110f88;
@@ -479,9 +476,9 @@ mark {
    font-size: 28px;
    color:#0f532c;
 }
-.practice-text p:nth-child(4n+2) {
-	color: #9b0606;
-   padding-left: 500px;
+.practice-text mark:nth-child(2n+1) {
+	background-color: greenyellow;
+   padding-inline: 10px;
 }
 .practice-text a:last-child {
    text-decoration:underline;
