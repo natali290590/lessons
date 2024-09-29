@@ -421,10 +421,16 @@ main {
    max-width: 1200px;
    margin: 0 auto;
 }
+.practice-text p:not(.cod p) {
+   color: #121096;
+}
 .practice-text:has(mark) {
    font-family: 'Roboto', sans-serif;
-   font-size: 18px;
+   font-size: 15px;
    line-height: 1.5;
+}
+.practice-text p:nth-child(2) {
+   color: #e06919;
 }
 .cod {
    max-width: 800px;
@@ -432,55 +438,47 @@ main {
    font-family: Arial, Helvetica, sans-serif;
    font-size: 12px;
    padding: 22px;
-   color: #2d2957;
+   color: #68070f;
    line-height: 1.6; /* 160% */
    margin-bottom: 18px;
 }
 .cod span{
    color: rgb(79, 124, 20);
 }
-.cod p:not(:last-child) {
-	margin-bottom: 8px;
- }
 mark {
    background-color: rgb(139, 137, 137);
    padding-inline: 8px;
 }
- .practice-text h2:first-child {
+.practice-text h2:first-child {
 	text-transform: uppercase;
    font-size: 34px;
    line-height: 2;
    margin-bottom: 25px;
    text-align: center;
    font-weight: 700;
-   color:#4e054b;
+   color:#911375;
 }
-
- .practice-text h3 {
+ .practice-text h3{
    font-size: 26px;
    line-height: 1.7;
    margin-bottom: 20px;
    text-align: center;
    font-weight: 600;
-   color:#4e054b;
+   color:#350b33;
  }
- .practice-text p:not(:last-child) {
-	margin-bottom: 17px;
- }
- .cod p:first-of-type {
-	font-size: 14px;
-   line-height: 1.7;
-   color:#110f88;
-}
-.practice-text h3:last-of-type{
+ .practice-text h3:last-of-type{
    font-size: 28px;
    color:#0f532c;
 }
+ .practice-text p:not(:last-child) {
+	margin-bottom: 17px;
+ }
+
 .practice-text mark:nth-child(2n+1) {
 	background-color: greenyellow;
    padding-inline: 10px;
 }
-.practice-text a:last-child {
+.link {
    text-decoration:underline;
    text-decoration-color: rgb(228, 231, 63);
 }
@@ -506,6 +504,5 @@ mark {
    text-align: center;
    color: rgb(7, 25, 104);
    background: url("../img/istockphoto.jpg"); 
-   background-attachment: fixed;
    border-block: 3px solid #52043a91;
 }
