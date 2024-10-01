@@ -79,6 +79,7 @@ main {
    padding: 20px;
    background:  #FFF;
    margin: 0 auto;
+   font-size: 0;
 }
 .business-content p:first-child {
    color:  #4A3AFF;
@@ -134,15 +135,16 @@ main {
    background: #4A3AFF;
    color:  #FFF;
    padding-block: 44.59px;
+   padding-inline: 138px;
  }
- .price h2 {
+ .price p:first-child {
    font-size: 30px;
    font-weight: 700;
    line-height: 1.06; /* 106.667% */
    opacity: 0.9;
    margin-bottom: 2px;
  }
- .price h3 {
+ .price h2 {
    font-size: 116px;
    font-weight: 700;
    line-height: 1.03; /* 103.448% */
