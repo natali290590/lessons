@@ -47,17 +47,14 @@ main {
 img {
    vertical-align: middle;
 } 
-.content-container p {
-   font-size: 20px;
-   color: rgb(110, 94, 3);
-   margin-left: 10px;
-
-}
 .content-container .content:not(:last-child) {
    margin-bottom: 20px;
 }
 .content p{
    display: inline-block;
+   font-size: 20px;
+   color: rgb(110, 94, 3);
+   margin-left: 10px;
 }
 .icon {
    background-color: #EF6D58;
