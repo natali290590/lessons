@@ -107,9 +107,15 @@ img {
    background-repeat: no-repeat;
    display: inline-block;
 }
-.star img{
+.star img {
    padding: 58px;
 }
+.shadow {
+   display: inline-block;
+   max-width: 340px;
+   box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
+}
+
 /* footer */
 .foot {
    text-align: center;
