@@ -11,7 +11,7 @@
 @import url("reset.css");
 
 body {
-	font-family: 'Lobster', serif;
+	font-family: 'Lobster',  sans-serif;
    background-image: linear-gradient(0deg, rgba(221, 218, 126, 0.928) 27%, rgba(109, 245, 238, 0.83) 79%);
    background-attachment: fixed;
 }
