@@ -1,0 +1,342 @@
+/* Підключення шрифтів */
+
+/* Google Fonts  plugin*/
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800,900&display=swap");
+
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+	font-family: 'Epilogue',  sans-serif;
+   background-color: cadetblue;
+   background-attachment: fixed;
+}
+
+.wrapper {
+	min-height: 100%;
+	/* overflow: hidden; */
+   overflow: clip;
+}
+main {
+   margin-bottom: 40px;
+}
+.container {
+   padding-block: 20px;
+}
+.header {
+   position: sticky;
+   width: 100%;
+   top: 0px;
+   z-index: 50;
+}
+.header__container{
+   background-color: rgb(126, 180, 182);
+   color: rgb(17, 7, 54);
+   padding-block: 10px;
+}
+
+.header__title {
+   font-size: 28px;
+   font-weight: 800;
+   text-align: center;
+   background-color: rgb(126, 180, 182);
+}
+.menu{
+   text-align: center;
+
+}
+.menu__item {
+   position: relative;
+   display: inline-block;
+}
+.menu__link {
+   font-size: 20px;
+   font-weight: 500;
+}
+.sub-menu {
+   position: absolute;
+   inset-inline-start: 0;
+   inset-block-start: 100%;
+   inline-size: 100%;
+   background-color:rgb(171, 206, 207);
+   padding: 8px;
+   visibility: hidden;
+}
+.sub-menu__item:not(:last-child) {
+   margin-bottom: 10px;
+}
+.sub-menu__link {
+   font-size: 18px;
+}
+.menu__item:hover .menu__link{
+   background-color: rgb(171, 206, 207);
+}
+.menu__item:hover .sub-menu{
+   visibility: visible;
+}
+.button-up {
+   position: fixed;
+   z-index: 50;
+   bottom: 50px;
+   right: 10px;
+}
+.button-up__dezign {
+   max-width: 90px;
+
+}
+.portfolio {
+   background-color: #28293E;
+}
+.portfolio__conteiner {
+   max-width: 1470px;
+   margin: 0 auto;
+   padding-inline: 15px;
+   padding-block: 108px;
+   margin-bottom: 40px;
+}
+.portfolio__text {
+   padding-left: 135px;
+   padding-right: 350px;
+   margin-bottom: 64px;
+}
+.text {
+  position: relative;
+}
+.text__label {
+   color:  #EF6D58;
+   font-size: 16px;
+   line-height: 2; /* 200% */
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+}
+
+.text__title {
+   color:  #FFF;
+   font-size: 56px;
+   font-weight: 800;
+   line-height: 1.14; /* 114.286% */
+   letter-spacing: -1px;
+}
+
+.button {
+   color: #FFF;
+   text-align: center;
+   font-weight: 900;
+   text-transform: uppercase;
+   border-radius: 6px;
+   border: 1px solid rgba(255, 255, 255, 0.30);
+   padding-inline: 30px;
+   padding-block: 16px;
+}
+.button:hover {
+   background-color: rgba(255, 255, 255, 0.30);
+}
+
+.text__link {
+   position: absolute;
+   right: 135px;
+   top: 53px;
+}
+
+.portfolio__cards {
+   font-size: 0;
+   border: 1px solid #3A3C56;
+}
+
+.portfolio__card {
+   width: 33.33%;
+   display: inline-block;
+   padding: 16px;
+}
+.portfolio__card:not(:last-child) {
+   border-inline-end: 1px solid #3A3C56;
+}
+.item-service{
+   position: relative;
+}
+.item-service:hover::before {
+   opacity: 0.2;
+}
+.item-service::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0.3181;
+   background: #5C2000;
+}
+
+.item-service__img{
+   width: 100%;
+
+}
+.item-service__content {
+   position: absolute;
+   bottom: 51px;
+   left: 48px;
+   right: 50px;
+
+}
+.item-service__title{
+   color: #FFF;
+   font-size: 40px;
+   font-weight: 800;
+   line-height: 1.2; /* 120% */
+  
+}
+.item-service__text{
+   display: inline-block;
+   color: #391400;
+   font-size: 16px;
+   text-align: center;
+   line-height: 2; /* 200% */
+   border-radius: 19px;
+   background: #e4e0e0;
+   min-height: 38px;
+   padding-top: 5px;
+   padding-inline: 16px;
+   margin-bottom: 24px;
+
+}
+
+.modern-picture__container {
+   background-color: #28293E;
+   padding: 20px 0;
+}
+.modern-picture__content {
+   margin: 0 auto;
+   font-size: 0;
+   width: 570px;
+   height: 602px;
+
+}
+.content {
+   position: relative;
+
+}
+.content::before{
+   content: '';
+   width: 370px;
+   height: 370px;
+   border-radius: 50%;
+   background-color: #32334C;
+   position: absolute;
+   top: 100px;
+   left: 100px;
+}
+
+/* .content__arch-one::before{
+   content: '';
+   width: 246px;
+   height: 305px;
+   border-radius: 50% 50% 6px 6px / 41% 41% 6px 6px;
+   background-color:#F7CC47;
+   
+ } */
+
+.content__arch-one {
+   position: absolute;
+   right: 0;
+   top: 189px;
+   width: 246px;
+   height: 305px;
+   border-radius: 50% 50% 6px 6px / 41% 41% 6px 6px;
+   background-color:#F7CC47;
+}
+.content__img-01 {
+   position: absolute;
+   left:0;
+   bottom: 0;
+   max-width: 246px;
+}
+/* .content__arch-two::before{
+   content: '';
+   width: 246px;
+   height: 305px;
+   border-radius: 50% 50% 6px 6px / 41% 41% 6px 6px;
+   background-color:#B550F8;
+} */
+.content__arch-two {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 246px;
+   height: 305px;
+   border-radius: 50% 50% 6px 6px / 41% 41% 6px 6px;
+   background-color:#B550F8;
+}
+.content__img-02 {
+   position: absolute;
+   left: 21px;
+   top: 24px;
+   max-width: 255px;
+}
+.content__letter {
+   position: absolute;
+   top:431px;
+   left: 56px;
+}
+.content__img-03 {
+   max-width: 214px;
+}
+.content__cloud {
+   position: absolute;
+   top: 80px;
+   right: 0;
+}
+.content__img-04 {
+   width: 100%;
+}
+.content__curl {
+   position: absolute;
+   top: 341px;
+   left: 0;
+}
+.content__img-05 {
+   width: 100%;
+}
+.content__arrow {
+   position: absolute;
+   left: 314px;
+   bottom: 0;
+}
+.content__img-06 {
+   width: 100%;
+}
+/* .content__stars::before {
+   content: '';
+   background-color: #EF6D58;
+   width: 112px;
+   height: 112px;
+   border-radius: 50%;
+} */
+.content__stars {
+   position: absolute;
+   left: 304px;
+   top: 40px;
+   background-color: #EF6D58;
+   width: 112px;
+   height: 112px;
+   border-radius: 50%;
+}
+.content__img-07 {
+   position: absolute;
+   inset-block-end: 28px;
+   inset-inline-start: 35px;
+   max-width: 42px;
+}
+
+.footer__container {
+   background-color: #7eb4b6;
+   margin-bottom: 10px;
+   padding-block: 8px;
+}
+.footer__text {
+   text-align: center;
+   color: rgb(17, 7, 54); 
+   font-size: 18px;
+   }
