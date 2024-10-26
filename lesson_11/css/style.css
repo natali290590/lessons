@@ -1,0 +1,312 @@
+/* Підключення шрифтів */
+
+/* Google Fonts  plugin*/
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800,900&display=swap");
+
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+	font-family: 'Epilogue',  sans-serif;
+   background-color: rgb(215, 244, 245);
+   background-attachment: fixed;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+   padding: 15px;
+   
+   
+}
+.peppa-picture {
+   position: relative;
+   background: url(/img/background-03.jpg) center / cover no-repeat;
+   height: 1080px;
+}
+.header {
+   width: 100%;
+
+}
+.header__container{
+   color: rgb(17, 7, 54);
+   padding-block: 10px;
+}
+
+.header__title {
+   font-size: 28px;
+   font-weight: 800;
+   text-align: center;
+}
+
+.peppa-logo {
+   display: inline-block;
+
+}
+.peppa-icon__body {
+   position: relative;
+   top: 80px;
+   left: 100px;
+   perspective: 800px;
+}
+.peppa-logo__back,
+.peppa-logo__front {
+   transition: all 0.5s;
+   overflow: hidden;
+}
+
+.peppa-logo__back {
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.peppa-logo__front {
+   backface-visibility: hidden;
+   transform: rotateX(0deg);
+}
+.peppa-icon__body:hover .peppa-logo__back{
+   transform: rotateX(0deg);
+}
+.peppa-icon__body:hover .peppa-logo__front{
+   transform: rotateX(-180deg);
+}
+.peppa-icon__body img{
+   max-width: 250px;
+   height: 100%;
+}
+
+
+.car__carcase {
+   display: inline-block;
+   position: relative;
+}
+
+.peppa-car__body {
+   position: absolute;
+   left: 10%;
+   bottom: 5%;
+   display: inline-block;
+   transform: rotate(-18deg);
+
+}
+.car {
+   font-size: 0;
+
+}
+
+.car__trunk {
+   position: relative;
+   border: 6px solid rgb(178, 89, 91);
+   border-radius: 45% 75% 0% 100% / 100% 0% 100% 0%;
+   width: 170px;
+   height: 150px;
+   background-color: rgb(230, 120, 111);
+   display: inline-block;
+   margin-right: -6px;
+}
+.car__trunk::after {
+   content: "";
+   position: absolute;
+   bottom: 0px;
+   left: 40px;
+   width: 83px;
+   height: 45px;
+   border: 6px solid rgb(178, 89, 91);
+   border-radius: 90px 130px 0px 0px;
+   margin-bottom: -6px;
+}
+.car__trunk::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   bottom: 13px;
+   left: -23px;
+   width: 20px;
+   height: 15px;
+   border: 3px solid rgb(79, 124, 117);
+   background-color: rgb(141, 186, 191);
+}
+
+.car__body::before{
+   content: "";
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   border: 4px solid rgb(178, 89, 91);
+   border-radius: 50px 50px 10px 10px;
+   width: 30px;
+   height: 4px;
+ 
+}
+.car__body {
+   position: relative;
+   border: 6px solid rgb(178, 89, 91);
+   width: 135px;
+   height: 150px;
+   background-color: rgb(230, 120, 111);
+   display: inline-block;
+   margin-right: -6px;
+}
+
+.car__engine::before {
+   content: "";
+   position: absolute;
+   bottom: 0px;
+   left: 19px;
+   width: 80px;
+   height: 45px;
+   border: 6px solid rgb(178, 89, 91);
+   border-radius: 120px 100px 0px 0px;
+   margin-bottom: -6px;
+} 
+.car__engine {
+   position: relative;
+   border: 5px solid rgb(178, 89, 91);
+   border-radius: 0px 120px 4px 0px;
+   border-bottom-right-radius: 100px 20px;
+   width: 230px;
+   height: 150px;
+   background-color: rgb(230, 120, 111);
+   display: inline-block;
+}
+.car__engine::after{
+   content: "";
+   position: absolute;
+   top: 0px;
+   left: 25px;
+   width: 140px;
+   height: 80px;
+   border: 6px solid rgb(178, 89, 91);
+   border-radius: 0px 320px 400px 700px;
+   margin-top: -6px;
+   transform: skew(23deg, 0deg);
+}
+.car__headlight,
+.car__headlight:first-child {
+   position: absolute;
+   bottom: 10px;
+   left: 100px;
+   width: 26px;
+   height: 30px;
+   border: 4px solid rgb(192, 186, 126);
+   background-color: #ffffff;
+   border-radius: 13px / 15px;
+   transform: rotate(-18deg);
+}
+.car__headlight:nth-child(2) {
+   position: absolute;
+   bottom: 15px;
+   left: 170px;
+}
+.car__mirror {
+   position: relative;
+   z-index: 1;
+   top: -15px;
+   left: -1px;
+   border: 4px solid rgb(178, 89, 91);
+   border-radius: 50%;
+   width: 25px;
+   height: 25px;
+   background-color: rgb(230, 120, 111);
+}
+.car__mirror:last-child {
+   top: -42px;
+   left: 130px;
+}
+
+.car__glass{
+   position: relative;
+   left: 295px;
+   bottom: 0;
+   width: 130px;
+   height: 35px;
+   border: 4px solid #9cc5f9;
+   background-color: #99b8fb;
+   opacity: 0.8;
+}
+.car__glass::after{
+   content: "";
+   position: absolute;
+   bottom: -50px;
+   left: 120px;
+   width: 6px;
+   height: 6px;
+   border: 6px solid #924d48;
+   border-radius: 50%;
+}
+.car__glass::before{
+   content: "";
+   position: absolute;
+   bottom: -26px;
+   left: 170px;
+   width: 20px;
+   height: 70px;
+   border-right: 4px solid #86827f;
+   border-radius: 0 200% 10px 0;
+   transform: rotate(30deg);
+}
+
+.car__wheel,
+.car__wheel:first-child {
+   position: relative;
+   z-index: -1;
+   bottom: 30px;
+   left: 50px;
+   width: 72px;
+   height: 65px;
+   border: 20px solid #52656b;
+   background-color: #8ebbc0;
+   border-radius: 52%;
+   transform: rotate(-18deg);
+   display: inline-block;
+}
+.car__wheel:nth-child(2) {
+   left: 60px;
+}
+.car__wheel:nth-child(3) {
+   left: 178px;
+}
+.car__wheel:nth-child(4) {
+   left: 190px;
+}
+.papa-pig{
+   max-width: 210px;
+   position: absolute;
+   right: 125px;
+   bottom: 130px;
+}
+.car__seat{
+   position: absolute;
+   z-index: -1;
+   left: 90px;
+   top: 20px;
+   width: 130px;
+   height: 20px;
+   background-color: #c47c7d;
+   border: 4px solid rgb(178, 89, 91);
+   border-radius: 50px 0px 0px 0px;
+}
+.car__rudder{
+   position: absolute;
+   right: 130px;
+   top: 8px;
+   height: 50px;
+   width: 50px;
+   border: 4px solid black;
+   border-radius: 50%;
+} 
+
+.footer__container {
+   border-block: 5px solid rgb(70, 125, 207);
+   margin-bottom: 10px;
+   padding-block: 8px;
+}
+.footer__text {
+   text-align: center;
+   color: rgb(17, 7, 54); 
+   font-size: 18px;
+   }
