@@ -68,13 +68,13 @@ body {
    backface-visibility: hidden;
    transform: rotateX(0deg);
 }
-.peppa-icon__body:hover .peppa-logo__back{
+.peppa-logo__body:hover .peppa-logo__back{
    transform: rotateX(0deg);
 }
-.peppa-icon__body:hover .peppa-logo__front{
+.peppa-logo__body:hover .peppa-logo__front{
    transform: rotateX(-180deg);
 }
-.peppa-icon__body img{
+.peppa-logo__body img{
    max-width: 250px;
    height: 100%;
 }
