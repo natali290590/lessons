@@ -218,6 +218,15 @@ body {
    top: -42px;
    left: 130px;
 }
+.car__trunk-lock {
+   position: absolute;
+   top: 50px;
+   left: 120px;
+   width: 5px;
+   height: 5px;
+   border: 5px solid rgb(178, 89, 91);
+   border-radius: 50%;
+}
 
 .car__glass{
    position: relative;
@@ -232,17 +241,7 @@ body {
 .car__glass::after{
    content: "";
    position: absolute;
-   bottom: -50px;
-   left: 120px;
-   width: 6px;
-   height: 6px;
-   border: 6px solid #924d48;
-   border-radius: 50%;
-}
-.car__glass::before{
-   content: "";
-   position: absolute;
-   bottom: -26px;
+   bottom: -25px;
    left: 170px;
    width: 20px;
    height: 70px;
