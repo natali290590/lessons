@@ -279,6 +279,10 @@ body {
    right: 125px;
    bottom: 130px;
 }
+.papa-pig:hover {
+   transform: scale(1.15);
+}
+
 .car__seat{
    position: absolute;
    z-index: -1;
