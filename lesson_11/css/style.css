@@ -53,49 +53,51 @@ body {
    left: 100px;
    perspective: 800px;
 }
-.peppa-logo__back,
-.peppa-logo__front {
-   transition: all 0.5s;
+.peppa-logo__img {
+   transition: all 0.9s;
    overflow: hidden;
-}
-
-.peppa-logo__back {
-   position: absolute;
-   top: 0;
-   left: 0;
-}
-.peppa-logo__front {
-   backface-visibility: hidden;
-   transform: rotateX(0deg);
-}
-.peppa-logo__body:hover .peppa-logo__back{
-   transform: rotateX(0deg);
-}
-.peppa-logo__body:hover .peppa-logo__front{
-   transform: rotateX(-180deg);
 }
 .peppa-logo__body img{
    max-width: 250px;
    height: 100%;
 }
-
-
-.car__carcase {
-   display: inline-block;
-   position: relative;
-}
-
-.peppa-car__body {
+.peppa-logo__img:hover {
+   transform: rotate(360deg);
+ }
+.peppa-car {
    position: absolute;
    left: 10%;
    bottom: 5%;
+
+}
+.peppa-car__body {
    display: inline-block;
    transform: rotate(-18deg);
 
 }
 .car {
    font-size: 0;
+   position: relative;
 
+}
+.car__carcase {
+   display: inline-block;
+}
+
+.george-pig {
+   position: absolute;
+   left: 60px;
+   top: -40px;
+   max-width: 150px;
+   opacity: 0; 
+   transform: rotate(90deg); 
+   transition: all 0.5s; 
+   transform-origin: bottom center;
+ }
+ 
+.car:hover .george-pig {
+   opacity: 1; 
+   transform: rotate(0deg); 
 }
 
 .car__trunk {
@@ -122,9 +124,8 @@ body {
 .car__trunk::before {
    content: "";
    position: absolute;
-   z-index: -1;
    bottom: 13px;
-   left: -23px;
+   left: -25px;
    width: 20px;
    height: 15px;
    border: 3px solid rgb(79, 124, 117);
@@ -299,6 +300,18 @@ body {
    border: 4px solid black;
    border-radius: 50%;
 } 
+.car__shadow{
+   position: relative;
+   opacity: 0.4;
+   top: -40px;
+   left: 0;
+   width: 500px;
+	height: 20px;
+	background: rgb(105, 104, 104);
+	border-radius: 250px / 10px;
+
+}
+
 
 .footer__container {
    border-block: 5px solid rgb(70, 125, 207);
