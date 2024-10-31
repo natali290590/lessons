@@ -1,0 +1,489 @@
+/* Підключення шрифтів */
+
+/* Google Fonts  plugin*/
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,800,900&display=swap");
+
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+	font-family: 'Epilogue',  sans-serif;
+   background-color: rgb(215, 244, 245);
+   background-attachment: fixed;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.container {
+   padding-block: 20px;
+   
+}
+.header {
+   width: 100%;
+
+}
+.header__container{
+   color: rgb(17, 7, 54);
+   padding-block: 10px;
+}
+
+.header__title {
+   font-size: 28px;
+   font-weight: 800;
+   text-align: center;
+}
+.peppa-picture {
+   position: relative;
+   z-index: -1;
+   background: url("../img/background.jpg") center / cover  no-repeat;
+   height: 840px;
+}
+
+.sun img{
+   animation: rotate 50s linear infinite;
+   max-width: 250px;
+}
+.sun {
+   position: relative;
+   top: 5%;
+   left: 10%;
+}
+@keyframes rotate {
+   0% {
+       transform: rotate(0deg);
+   }
+   100% {
+       transform: rotate(360deg);
+   }
+}
+.cloud-one{
+   position: absolute;
+   top: 1%;
+   left: 0%;
+   animation: cloud 50s linear infinite 1s;
+}
+@keyframes cloud{
+   0%{
+   left: 0%;
+   }
+   100%{
+   left: 100%;
+   }
+   }
+.cloud-one img {
+   max-width: 300px;
+}
+.cloud-two {
+   position: absolute;
+   top: 23%;
+   left: -60%;
+   z-index: -1;
+   animation: cloud 65s linear infinite 7s;
+}
+
+.cloud-two img {
+   max-width: 280px;
+}
+.helicopter{
+   position: absolute;
+   top: 10%;
+   left: 95%;
+   animation: helicopter 7s ease-out 1s forwards, helicopter-reverse 7s ease-in 38s forwards;
+}
+@keyframes helicopter{
+   0%{
+   left: 100%;
+   }
+   30% {
+      top:8%;
+   }
+   50% {
+   top:15%;   
+   }
+   100%{
+   left: 70%;
+   top:18%;   
+   }
+   }
+@keyframes helicopter-reverse {
+      0% {
+          left: 70%;
+          top: 18%;
+      }
+      100% {
+          left: 0%;
+          top: 10%;
+          opacity: 0;
+      }
+  }
+
+.helicopter img {
+      max-width: 400px;
+   }
+.peppa-car {
+   position: absolute;
+   left: 10%;
+   bottom: 3%;
+   animation: peppa-car 7s linear 1s forwards, car-reverse 7s linear 38s forwards;
+}
+@keyframes peppa-car{
+   0%{
+   left: 0%;
+   }
+   100%{
+   left: 30%;
+   }
+   }
+@keyframes  car-reverse {
+   0%{
+      left: 30%;
+      }
+      100%{
+      left: 70%;
+      opacity: 0;
+      }
+}
+
+.peppa-logo {
+   position: absolute;
+   left: 35%;
+   top: 100px;
+   opacity: 0;
+   animation: peppa-logo 1s 40s both;
+}
+@keyframes  peppa-logo {
+   0%{
+      opacity: 0;
+      }
+      100%{
+      opacity: 1;
+      }
+}
+
+.character {
+   width: 250px;
+   padding: 20px;
+   text-align: center;
+   color: rgb(8, 8, 48);
+   background-color: #f9f9f9;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.peppa-text01 {
+   position: absolute;
+   left: 40%;
+   top: 39%;
+   opacity: 0;
+   animation: opacity-in 5s 5s forwards, opacity-out 8s 10s forwards; 
+}
+ .rabbit-text01  {
+   position: absolute;
+   left: 58%;
+   top: 26%;
+   opacity: 0;
+   animation: opacity-in 5s 10s forwards, opacity-out 8s 15s forwards; 
+}
+
+.peppa-text02 { 
+   position: absolute;
+   left: 40%;
+   top: 39%;
+   opacity: 0;
+   animation: opacity-in 5s 15s forwards, opacity-out 8s 20s forwards;
+}
+.rabbit-text02 {
+   position: absolute;
+   left: 58%;
+   top: 26%;
+   opacity: 0;
+   animation: opacity-in 5s 20s forwards, opacity-out 10s 25s forwards;
+}
+
+.peppa-text03 {
+   position: absolute;
+   left: 40%;
+   top: 39%;
+   opacity: 0;
+   animation: opacity-in 5s 25s forwards, opacity-out 8s 30s forwards;
+}
+.rabbit-text03 {
+   position: absolute;
+   left: 58%;
+   top: 26%;
+   opacity: 0;
+   animation: opacity-in 5s 30s forwards, opacity-out 8s 35s forwards;
+} 
+
+@keyframes opacityIn {
+   0% {
+       opacity: 0;
+   }
+   100% {
+       opacity: 1;
+   }
+}
+@keyframes opacity-out {
+   0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+
+
+
+.peppa-car__body {
+   display: inline-block;
+}
+.car {
+   font-size: 0;
+   position: relative;
+
+}
+.car__carcase {
+   display: inline-block;
+}
+
+.peppa-pig {
+   position: absolute;
+   left: 80px;
+   top: -80px;
+   max-width: 120px;
+
+ }
+ .papa-pig{
+   max-width: 210px;
+   position: absolute;
+   right: 125px;
+   bottom: 140px;
+}
+
+.car__trunk {
+   position: relative;
+   border: 6px solid rgb(178, 89, 91);
+   border-radius: 45% 75% 0% 100% / 100% 0% 100% 0%;
+   width: 170px;
+   height: 150px;
+   background-color: rgb(230, 120, 111);
+   display: inline-block;
+   margin-right: -6px;
+}
+.car__trunk::after {
+   content: "";
+   position: absolute;
+   bottom: 0px;
+   left: 40px;
+   width: 83px;
+   height: 45px;
+   border: 6px solid rgb(178, 89, 91);
+   border-radius: 90px 130px 0px 0px;
+   margin-bottom: -6px;
+}
+.car__trunk::before {
+   content: "";
+   position: absolute;
+   bottom: 13px;
+   left: -25px;
+   width: 20px;
+   height: 15px;
+   border: 3px solid rgb(79, 124, 117);
+   background-color: rgb(141, 186, 191);
+}
+
+.car__body::before{
+   content: "";
+   position: absolute;
+   top: 10px;
+   left: 10px;
+   border: 4px solid rgb(178, 89, 91);
+   border-radius: 50px 50px 10px 10px;
+   width: 30px;
+   height: 4px;
+ 
+}
+.car__body {
+   position: relative;
+   border: 6px solid rgb(178, 89, 91);
+   width: 135px;
+   height: 150px;
+   background-color: rgb(230, 120, 111);
+   display: inline-block;
+   margin-right: -6px;
+}
+
+.car__engine::before {
+   content: "";
+   position: absolute;
+   bottom: 0px;
+   left: 19px;
+   width: 80px;
+   height: 45px;
+   border: 6px solid rgb(178, 89, 91);
+   border-radius: 120px 100px 0px 0px;
+   margin-bottom: -6px;
+} 
+.car__engine {
+   position: relative;
+   border: 5px solid rgb(178, 89, 91);
+   border-radius: 0px 120px 4px 0px;
+   border-bottom-right-radius: 100px 20px;
+   width: 230px;
+   height: 150px;
+   background-color: rgb(230, 120, 111);
+   display: inline-block;
+}
+.car__engine::after{
+   content: "";
+   position: absolute;
+   top: 0px;
+   left: 25px;
+   width: 140px;
+   height: 80px;
+   border: 6px solid rgb(178, 89, 91);
+   border-radius: 0px 320px 400px 700px;
+   margin-top: -6px;
+   transform: skew(23deg, 0deg);
+}
+.car__headlight,
+.car__headlight:first-child {
+   position: absolute;
+   bottom: 10px;
+   left: 100px;
+   width: 26px;
+   height: 30px;
+   border: 4px solid rgb(192, 186, 126);
+   background-color: #ffffff;
+   border-radius: 13px / 15px;
+   transform: rotate(-18deg);
+
+}
+.car__headlight:nth-child(2) {
+   position: absolute;
+   bottom: 15px;
+   left: 170px;
+}
+.car__mirror {
+   position: relative;
+   z-index: 1;
+   top: -15px;
+   left: -1px;
+   border: 4px solid rgb(178, 89, 91);
+   border-radius: 50%;
+   width: 25px;
+   height: 25px;
+   background-color: rgb(230, 120, 111);
+}
+.car__mirror:last-child {
+   top: -42px;
+   left: 130px;
+}
+.car__trunk-lock {
+   position: absolute;
+   top: 50px;
+   left: 120px;
+   width: 5px;
+   height: 5px;
+   border: 5px solid rgb(178, 89, 91);
+   border-radius: 50%;
+}
+
+.car__glass{
+   position: relative;
+   left: 295px;
+   bottom: 0;
+   width: 130px;
+   height: 35px;
+   border: 4px solid #9cc5f9;
+   background-color: #99b8fb;
+   opacity: 0.8;
+}
+.car__glass::after{
+   content: "";
+   position: absolute;
+   bottom: -25px;
+   left: 170px;
+   width: 20px;
+   height: 70px;
+   border-right: 4px solid #86827f;
+   border-radius: 0 200% 10px 0;
+   transform: rotate(30deg);
+}
+
+.car__wheel,
+.car__wheel:first-child {
+   position: relative;
+   z-index: -1;
+   bottom: 35px;
+   left: 50px;
+   width: 72px;
+   height: 72px;
+   border: 20px solid #52656b;
+   background-color: #8ebbc0;
+   border-radius: 50%;
+   display: inline-block;
+
+}
+
+
+.car__wheel:nth-child(2) {
+   left: 60px;
+
+}
+.car__wheel:nth-child(3) {
+   left: 178px;
+
+}
+.car__wheel:nth-child(4) {
+   left: 190px;
+}
+
+
+.car__seat{
+   position: absolute;
+   z-index: -1;
+   left: 90px;
+   top: 20px;
+   width: 130px;
+   height: 20px;
+   background-color: #c47c7d;
+   border: 4px solid rgb(178, 89, 91);
+   border-radius: 50px 0px 0px 0px;
+}
+.car__rudder{
+   position: absolute;
+   right: 130px;
+   top: 8px;
+   height: 50px;
+   width: 50px;
+   border: 4px solid black;
+   border-radius: 50%;
+} 
+.car__shadow{
+   position: relative;
+   opacity: 0.4;
+   top: -40px;
+   left: 0;
+   width: 500px;
+	height: 20px;
+	background: rgb(105, 104, 104);
+	border-radius: 250px / 10px;
+
+}
+
+
+.footer__container {
+   border-block: 5px solid rgb(70, 125, 207);
+   margin-bottom: 10px;
+   padding-block: 8px;
+}
+.footer__text {
+   text-align: center;
+   color: rgb(17, 7, 54); 
+   font-size: 18px;
+   }
