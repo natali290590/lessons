@@ -126,7 +126,7 @@ body {
    }
 .peppa-car {
    position: absolute;
-   left: 10%;
+   left: 0%;
    bottom: 3%;
    animation: peppa-car 7s linear 1s forwards, car-reverse 7s linear 38s forwards;
 }
