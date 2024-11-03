@@ -91,6 +91,10 @@ body {
    line-height: 2; /* 200% */
 }
 
+.menu__item:hover {
+   transform: scale(1.1);
+}
+
 .work__cards {
    margin-bottom: 64px;
 }
