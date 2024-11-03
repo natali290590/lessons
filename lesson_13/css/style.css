@@ -93,6 +93,7 @@ body {
 
 .menu__item:hover {
    transform: scale(1.1);
+   color: rgb(202, 200, 200);
 }
 
 .work__cards {
@@ -321,18 +322,18 @@ body {
 }
 .calendar {
    display: flex;
-   gap: 30px;
+   flex-wrap: wrap;
+   justify-content: space-between;
 }
 .calendar__item {
    display: flex;
    border-radius: 6px;
    border: 1px solid #3A3C56;
    padding: 40px;
-   flex-basis: 370px;
-   flex-grow: 1;
-   flex-shrink: 1;
+   flex: 0 1 370px;
    flex-direction:column;
    min-height: 448px;
+   flex-wrap: wrap;
  
 }
 
@@ -347,13 +348,15 @@ body {
 
 .calendar__date{
    display: flex;
+   flex-wrap: wrap;
+   gap: 12px;
 }
 .calendar__date p {
    font-size: 72px;
    font-weight: 800;
    line-height: 1.11; /* 111.111% */
    letter-spacing: -2px;
-   margin-right: 12px;
+
 }
 .calendar__date h2{
    font-size: 24px;
@@ -424,6 +427,7 @@ body {
 
 .people {
    display: flex;
+   flex-wrap: wrap;
    gap: 30px;
 
 }
@@ -463,6 +467,7 @@ body {
 .founder__conteiner {
    margin-bottom: 176px;
    display: flex;
+   flex-wrap: wrap;
    gap: 130px;
 }
 .founder__left-side {
@@ -485,6 +490,7 @@ body {
 }
 .founder__right-side {
    padding-top: 44px;
+   flex: 1 0 470px;
 
 }
 .citation::after{
