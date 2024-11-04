@@ -57,6 +57,7 @@ body {
    text-align: center;
    display: flex;
    justify-content: center;
+   gap: 30px;
 
 }
 
@@ -87,8 +88,16 @@ body {
    justify-content: center;
 }
 .menu__item {
+   color: rgba(255, 255, 255, 0.64);
    font-size: 16px;
    line-height: 2; /* 200% */
+
+}
+.menu__item sup {
+   line-height: 1.71;
+   text-align: center;
+   display: inline-block;
+   transform: translateY(-9px);
 }
 
 .menu__item:hover {
@@ -199,6 +208,7 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
+   gap: 30px;
 }
 .contact {
    min-height: 336px;
@@ -241,7 +251,7 @@ body {
 }
 
 .text {
-   margin: 92px 0 13px 0;
+   margin: 92px 0 23px 0;
 
 }
 .text__title{
@@ -249,7 +259,6 @@ body {
    font-size: 24px;
    font-weight: 700;
    line-height: 1.33; /* 133.333% */
-   margin-bottom: 23px;
 }
 .text__label {
    color: #EF6D58;
@@ -257,6 +266,7 @@ body {
    line-height: 2; /* 200% */
    letter-spacing: 3px;
    text-transform: uppercase;
+   margin-bottom: 13px;
 
 }
 .button--orange {
@@ -273,7 +283,6 @@ body {
    box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
    margin-left: 68px;
    max-width: 338px;
-
 }
 
 
@@ -288,7 +297,6 @@ body {
 .contact__img {
    margin: -60px 83px 0 56px;
    max-width: 239px;
-
 }
 
 .contact__right::before {
@@ -314,6 +322,7 @@ body {
    text-align: center;
    display: flex;
    justify-content: center;
+   gap: 30px;
 
 }
 
@@ -323,7 +332,7 @@ body {
 .calendar {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
+   gap: 30px;
 }
 .calendar__item {
    display: flex;
@@ -377,14 +386,10 @@ body {
    font-size: 16px;
    line-height: 2; /* 200% */
    margin-bottom: 40px;
-   
+   border-bottom: 1px solid #3A3C56;
+   padding-bottom: 36px;   
 }
-.calendar__time::after{
-   content: "";
-   width: 290px;
-   height: 1px;
-   background: #3A3C56;
-}
+
 .calendar__title {
    font-size: 24px;
    font-weight: 700;
@@ -406,6 +411,7 @@ body {
    display: flex;
    justify-content: center;
    align-items: center; 
+   gap: 30px;
 }
 .calendar__link:hover {
    color:  #EF6D58;
@@ -432,7 +438,7 @@ body {
 
 }
 .people__item {
-   flex: 1 0 270px;
+   flex: 1 1 270px;
 }
 .people__img {
    border-radius: 6px;
@@ -442,6 +448,7 @@ body {
    display: flex;
    justify-content: center;
    align-items: flex-end;
+   gap: 30px;
 }
 .picture {
    max-width: 270px;
@@ -468,10 +475,11 @@ body {
    margin-bottom: 176px;
    display: flex;
    flex-wrap: wrap;
-   gap: 130px;
+   justify-content: space-between;
+   gap: 30px;
 }
 .founder__left-side {
-   flex: 1 0 570px;
+   flex: 0 1 570px;
 
 }
 .founder__img {
@@ -483,14 +491,15 @@ body {
    display: flex;
    justify-content: center;
    align-items: flex-end;
+   gap: 30px;
 }
 
 .portret {
    max-width: 477px;
 }
 .founder__right-side {
+   flex: 0 1 470px;
    padding-top: 44px;
-   flex: 1 0 470px;
 
 }
 .citation::after{
