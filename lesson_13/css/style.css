@@ -190,10 +190,11 @@ body {
  }
 .button {
    font-weight: 900;
+   text-align: center;
    text-transform: uppercase;
    border-radius: 6px;
    border: 1px solid rgba(255, 255, 255, 0.30);
-   padding: 18px 30px;
+   padding: 18px 30px 16px 30px;
    color: #FFF;
    transition: all 1s;
 }
@@ -208,14 +209,11 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 30px;
 }
-.contact {
-   min-height: 336px;
+ .contact {
    border-radius: 6px;
    background: #FDF0E9;
-   margin: 0 auto;
-}
+} 
 
 .contact__conteiner {
    display: flex;
@@ -224,9 +222,7 @@ body {
 
 }
 .contact__offer {
-   flex-basis: 248px;
-   flex-grow: 1;
-   flex-shrink: 1;
+   flex:1 1 248px;
    margin-left: 100px;
    position: relative;
    
@@ -269,15 +265,17 @@ body {
    margin-bottom: 13px;
 
 }
+.contact__button {
+   margin-bottom: 64px;
+}
 .button--orange {
    background: #EF6D58;
+   margin-bottom: 64px;
 }
 
 .contact__middle {
    align-self: center;
-   flex-basis: 444px;
-   flex-grow: 1;
-   flex-shrink: 1;
+   flex: 1 1 444px;
 }
 .contact__letter {
    box-shadow: 0px 24px 48px 0px rgba(85, 30, 0, 0.04);
@@ -287,9 +285,8 @@ body {
 
 
 .contact__right {
-   flex-basis: 378px;
-   flex-grow: 1;
-   flex-shrink: 1;
+   flex:1 1 378px;
+   align-self: flex-end;
    position: relative;
    z-index: 1;
  
@@ -431,6 +428,7 @@ body {
    display: flex;
 }
 
+
 .people {
    display: flex;
    flex-wrap: wrap;
@@ -438,21 +436,21 @@ body {
 
 }
 .people__item {
-   flex: 1 1 270px;
+   flex: 0 1 270px;
+
 }
 .people__img {
    border-radius: 6px;
    border: 1px solid #3A3C56;
-   min-height: 272px;
    margin-bottom: 26px;
    display: flex;
    justify-content: center;
    align-items: flex-end;
-   gap: 30px;
+   height: 272px;
 }
 .picture {
    max-width: 270px;
-}
+} 
 .picture:hover {
    transform: translateY(-12px) scale(1.1);
    border-radius: 10px;
@@ -491,7 +489,7 @@ body {
    display: flex;
    justify-content: center;
    align-items: flex-end;
-   gap: 30px;
+
 }
 
 .portret {
