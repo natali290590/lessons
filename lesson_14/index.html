@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" sizes="32x32" type="image/x-icon">
+    <title>Lesson 14</title>
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <div class="header__container">
+        <h1 class="header__title">Домашня робота №14. Форми</h1> 
+    </div>
+    </header>
+    <main class="page">
+        <div class="container">
+            <div class="dark-form">
+                <div class="dark-form__container">
+                    <form  enctype="multipart/form-data" action="#" class="form-dark">
+                        <div class="form-dark__line">
+                            <div class="form-dark__item">
+                                <label class="form-dark__label" for="first">First Name</label>
+                                <input name="form[]" id="first" type="text" required placeholder="Enter First Name"
+                                class="form-dark__input">
+                            </div>  
+                            <div class="form-dark__item">
+                                <label class="form-dark__label" for="last">Last Name</label>
+                                <input name="form[]" id="last" type="text" required placeholder="Enter Last Name"
+                                class="form-dark__input">
+                            </div>
+                    </div>
+                        <div class="form-dark__line"> 
+                            <div class="form-dark__item">
+                            <label class="form-dark__label" for="email">Email</label>
+                            <input name="form[]" id="email" type="email" required placeholder="Enter your Email"
+                            class="form-dark__input">
+                            </div>
+                            <div class="form-dark__item">
+                                <label class="form-dark__label" for="phone">Phone Number</label>
+                                <input name="form[]" id="phone" type="tel" required placeholder="Enter Phone Number"
+                                class="form-dark__input">
+                            </div>
+                        </div>
+                        <div class="form-dark__line">
+                            <div class="form-dark__item">
+                            <label class="form-dark__label" for="textarea">Message</label>
+                            <textarea name="form[message]" id="textarea" placeholder="Enter your Message"  class="form-dark__textarea"></textarea>
+                        </div>
+                        </div>
+                        <div class="form-dark__line">
+                            <div class="checkbox">
+                                <input id="checkbox-item-01" class="checkbox__input" checked name="checkbox-item" value="1" type="checkbox">
+                                <label class="checkbox__label" for="checkbox-item-01">I agree with Terms of Use and Privacy Policy</label>
+                            </div>      
+                                <button type="submit" class="button-dark"> Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="light-form">
+                <div class="light-form__container">
+                    <div class="light-form__block">
+                    <div class="light-form__text"><p>There are many variations of passages of Lorem Ipsu available,
+                        but the majority have suffered alte.</p></div>
+                        <form  id="light-form" enctype="multipart/form-data" action="#" class="form-light">
+                        <div class="form-light__line">
+                            <input name="form[]" id="first" type="text" required placeholder="Name*"
+                            class="form-light__input">
+                        </div>
+                        <div class="form-light__line">
+                            <input name="form[]" id="first" type="email" required placeholder="Email*"
+                            class="form-light__input">
+                        </div>
+                        <div class="form-light__line">
+                            <input name="form[]" id="first" type="text" placeholder="Location"
+                            class="form-light__input">
+                        </div>
+                        <div class="form-light__line">
+                            <div class="form-light__item">
+                                <input name="form[]" id="first" type="text" required placeholder="Budget*"
+                                class="form-light__input">  
+                                <input name="form[]" id="first" type="text" required placeholder="Subject*"
+                                class="form-light__input">  
+                            </div>
+                           
+                        </div>
+                        <div class="form-light__line">
+                            <textarea name="form[message]" id="textarea" required placeholder="Message*"  class="form-light__textarea"></textarea>
+                        </div>
+                    </form>
+                    <button type="submit" form="light-form" class="button-light">Submit</button>
+    
+                </div>
+            </div>
+            </div>
+        
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__text"> <p>Всі права захищені. Крім як для особистого використання, ніяка частина цієї публікації або його дизайн можуть бути відтворені, передані або використані в будь-якій формі або будь-якими способами, електронними, механічними, копіювання, запис або іншим способом без письмового дозволу від Наталі!</p></div>  
+        </div>
+    </footer>
+</div>
+</body>
+</html>
