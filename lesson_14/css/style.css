@@ -50,6 +50,7 @@ body {
    max-width: 996px;
    margin: 0 auto;
    padding-inline: 10px;
+
 }
 .form-dark {
    border-radius: 12px;
@@ -64,13 +65,13 @@ body {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
-   gap: 40px;
+   gap: 50px;
 }
 .form-dark__item{
    display: flex;
    flex-direction: column;
    gap: 16px;
-   flex: 1 0 413px;
+   flex: 1 0 411px;
 
 }
 .form-dark__label {
@@ -177,7 +178,6 @@ body {
    flex-direction: column;
    gap: 24px;
    width: 100%;
-
 }
 
 .light-form__text {
