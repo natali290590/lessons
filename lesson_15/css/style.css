@@ -865,7 +865,7 @@ margin-bottom:23px;
       flex: 1 0 90%;
    }
    .founder__right-side {
-      flex-grow: 1 0 90%;
+      flex: 1 0 90%;
    }
    .citation__logo {
       font-size: 12px;
