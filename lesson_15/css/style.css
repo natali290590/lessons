@@ -1062,10 +1062,10 @@ margin-bottom:23px;
 }
 
 .movies {
-   padding: 30px;
-   flex-basis: 275px; 
+   padding: 24px;
+   flex-basis: 18.682%; 
    background: #1a1a1a;
-   border-radius: 12px;
+   border-radius: 10px;
    min-inline-size: 184px;
 }
 
