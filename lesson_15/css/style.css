@@ -433,6 +433,9 @@ body {
    left:-16px;
    max-width: 148px;
    animation: pulse 2s infinite;
+   aspect-ratio: 1;
+   object-fit: contain;
+   width: 100%;
 }
 @keyframes pulse {
    0% {
@@ -478,7 +481,7 @@ margin-bottom:23px;
 .contact__middle img {
    aspect-ratio: 196 / 112;
    width: 100%;
-   object-fit: cover;
+   object-fit: contain;
 }
 
 .contact__letter {
@@ -500,7 +503,7 @@ margin-bottom:23px;
 .contact__img img {
    aspect-ratio: 239 / 396;
    width: 100%;
-   object-fit: cover;
+   object-fit: contain;
 }
 
 .contact__img::before {
