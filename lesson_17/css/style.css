@@ -694,12 +694,12 @@ body {
    padding: 51px 48px;
    display: flex;
    align-items: flex-end;
-   min-height: 416px;
+   aspect-ratio: 570 / 416;
 }
 
 .card-portfolio:nth-child(1) {
    grid-column: span 2;
-   height: 720px;
+   aspect-ratio: 1170 / 720;
 } 
 .card-portfolio img {
    position: absolute;
@@ -739,9 +739,7 @@ body {
    .portfolio__galery {
       margin-bottom: 40px;
    }
-   .card-portfolio:nth-child(1) {
-      height: 440px;
-   } 
+
    .card-portfolio__title {
       font-size: 36px;
     }
