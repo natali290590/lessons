@@ -94,6 +94,7 @@ body {
    align-items: flex-end;
 	background-color: #9ac57d;
 	padding: 15px;
+   aspect-ratio: 305 / 184;
 }
 .item__content::before {
    content: '';
@@ -125,7 +126,7 @@ body {
    z-index: 5;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 930px) {
    .items {
       column-gap: 34px;
       row-gap: 24px;
