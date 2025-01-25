@@ -1,0 +1,27 @@
+/* Підключення шрифтів */
+/* Google Fonts  plugin*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,900&display=swap");
+
+
+/* Скидання стилів */
+@import url("reset.css");
+
+body {
+	font-family: 'Roboto',  sans-serif;
+   background-color: #bcf0d6d8;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+   display: flex;
+   flex-direction: column;
+}
+.wrapper > main {
+   flex-grow: 1;
+}
+[class*="__container"] {
+   max-width: 1140px;
+   margin: 0 auto;
+   padding-inline: 15px;
+}
