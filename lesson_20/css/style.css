@@ -420,7 +420,7 @@ body {
 .button--white img {
 	aspect-ratio: 1;
 	max-width: 1.5rem;
-	object-fit: cover;
+	object-fit: contain;
 }
 
 .project__body::before {
@@ -498,11 +498,13 @@ body {
 	flex-basis: 49.09%;
 }
 .block {
+	counter-reset: card-number;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap: 1.5rem;
 }
 .block__item {
+	counter-increment: card-number;
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
@@ -521,9 +523,13 @@ body {
 	border-radius: 0.428rem;
     background: rgba(237, 216, 255, 0.50);
 }
-.block__img--purple {
-	background:  #A53DFF;
+
+.block__img--white{
+	background: rgb(165, 61, 255);
+	
 }
+
+
 .block__img img {
 	max-width: 2rem;
 	height: 100%;
@@ -540,6 +546,11 @@ body {
 	font-weight: 600;
 	line-height: 1.2; /* 120% */
 	margin-bottom: 0.75rem;
+}
+
+.block__title::before {
+	content: counter(card-number)".";
+	margin-inline-end: 0.25rem;
 }
 
 @media (min-width: 60rem) {
@@ -667,6 +678,7 @@ body {
 }
 
 .portfolio__link img {
+	aspect-ratio: 1;
 	max-width: 1.5rem;
 	max-height: 1.5rem;
 	object-fit: contain;
@@ -713,10 +725,11 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 0.75rem;
+
 }
 .button--big img {
-	max-width: 1.5rem;
-	max-height: 1.5rem;
+	aspect-ratio: 1;
+	width: 1.5rem;
 	object-fit: contain;
 }
 
@@ -840,7 +853,7 @@ body {
 	color:  #132238;
 	font-size: clamp(1rem, 0.84rem + 0.8vw, 1.5rem); /* 16>24 1320>320 */
 	font-weight: 600;
-	line-height: 100%; /* 24px */
+	line-height: 1; /* 100% */
 	margin-bottom: 1rem;
 }
 .experience__text {
@@ -881,11 +894,13 @@ body {
 .clients__logo {
 	width: clamp(9rem, 7.88rem + 5.6vw, 12.5rem); /* 144>200 1320>320 */
 	aspect-ratio: 200 / 200;
+
 }
 .clients__logo img {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
+	filter: opacity(40%);
 }
 
 .testimonial {
@@ -994,9 +1009,7 @@ body {
 	background: rgba(237, 216, 255, 0.50);
 	padding: clamp(0.188rem, 0.008rem + 0.9vw, 0.75rem); /* 3>12 1320>320 */
 }
-.address__img--active {
-    background:  #A53DFF;
-}
+
 
 .address__img img {
 	width: 1.5rem;
@@ -1195,10 +1208,25 @@ body {
 		background:  #FFF;
 		box-shadow: 0rem 0.75rem 4rem 0rem rgba(28, 25, 25, 0.12);
 	}
-	.block__item:hover,
+	
+
 	.blog__link:hover,
 	.portfolio__item:hover {
 		transform: scale(1.05);
+	}
+
+	.block__item:hover {
+		box-shadow: 2rem 2rem 7.75rem 0rem rgba(43, 56, 76, 0.10);
+		transform: scale(1.05);
+	}
+	.block__item:hover .block__img,
+	.address__item:hover .address__img {
+		background: #A53DFF;
+	}
+	.block__item:hover .block__img img,
+	.address__item:hover .address__img img  {
+		filter: brightness(0) invert(1);
+		transition: all 0.3s;
 	}
 	 
 	.experience__card:hover {
@@ -1223,6 +1251,8 @@ body {
 	.menu__link:hover {
 		color: #A53DFF;
 	}
-
+	.clients__logo img:hover {
+		filter: opacity(100%);
+	}
 
  }
