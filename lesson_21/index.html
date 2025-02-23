@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" class>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon/favicon-32x32.png" sizes="32x32" type="image/x-icon">
+    <title>Lesson 21</title>
+</head>
+<body>
+    <div class="wrapper">
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo logo"> 
+                <img src="img/logo-01.png" alt="logo streemvibe">
+                <img class="logo__text" src="img/stream.png" alt="logo streemvibe">
+            </a>
+            <div class="header__menu menu">
+                <nav class="menu__body">
+                    <ul class="menu__list"> 
+                        <li class="menu__item"> <a href="#" class="menu__link">Home</a></li>
+                        <li class="menu__item"> <a href="#" class="menu__link active">Movies & Shows</a></li>
+                        <li class="menu__item"> <a href="#" class="menu__link">Support</a></li>
+                        <li class="menu__item"> <a href="#" class="menu__link">Subscriptions</a></li>
+                    </ul> 
+                </nav>
+        </div>
+        <div class="header__actions actions-header">
+            <a href="#" class="actions-header__item" aria-label="search on site">
+                <img src="img/magnifier.png" alt="icon magnifier">
+            </a>
+            <a href="#" class="actions-header__item" aria-label="reminder bell">
+                <img src="img/bell.png" alt="icon bell">
+            </a>
+            <button class="actions-header__icon icon-menu" type="button" aria-label="open site menu "><span></span></button>
+        </div>
+
+    </div>
+    </header>
+    <main class="page"> 
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__body">
+                <div class="hero__poster">
+                    <img src="img/hero.webp" alt="poster avenger film">
+                </div>
+                <div class="hero__content content">
+                    <h1 class="content__title">Avengers : Endgame</h1>
+                    <div class="content__text"><p>With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.</p></div>
+                    <div class="coontent__nav nav">
+                        <a href="#" class="nav__button button">
+                            <img src="img/play.png" alt="icon play">
+                            <div class="button__text"><p>Play Now</p></div>
+                        </a>
+                        <ul class="nav__sicial">
+                            <li>  <a href="#" class="nav__item" aria-label="add to favorites">
+                                <img src="img/plus.png" alt="icon plus">
+                            </a></li>
+                         <li><a href="#" class="nav__item" aria-label="like the movie">
+                            <img src="img/like.png" alt="icon like">
+                        </a></li> 
+                        <li><a href="#" class="nav__item" aria-label="turn on sound">
+                            <img src="img/speaker.png" alt="icon speaker">
+                        </a></li>
+                        
+                    </ul>
+                        
+                    </div>
+                </div>
+                <div class="hero__slider slider">
+                    <a href="" class="slider__arrow" aria-label="go to previous film">
+                        <img src="img/left.png" alt="icon left arrow">
+                    </a>
+                    
+                    <div class="slider__rewind rewind">
+                        <button class="rewind__item rewind__item--red" type="button" aria-label="slide 1"></button>
+                        <button class="rewind__item" type="button" aria-label="slide 2"></button>
+                        <button class="rewind__item" type="button" aria-label="slide 3"></button>
+                        <button class="rewind__item" type="button" aria-label="slide 4"></button>
+                    </div>
+                    <a href="" class="slider__arrow" aria-label="go to next film">
+                        <img src="img/right.png" alt="icon right arrow">
+                    </a>
+                </div>
+            </div>
+            </div>            
+        </section>
+        <div class="movies">
+            <div class="movies__container">
+                <div class="movies__content">
+                    <a href="#" class="movies__link">Movies</a>
+                    <section class="our-genres">
+                        <div class="our-genres__header top-title">
+                            <h2 class="top-title__title">Our Genres</h2>
+                            <div class="top-title__navigation slider">
+                                <a href="" class="slider__arrow" aria-label="go to previous film">
+                                    <img src="img/left.png" alt="icon left arrow">
+                                </a>
+                                <div class="slider__rewind rewind">
+                                    <button class="rewind__item rewind__item--red" type="button" aria-label="slide 1"></button>
+                                    <button class="rewind__item" type="button" aria-label="slide 2"></button>
+                                    <button class="rewind__item" type="button" aria-label="slide 3"></button>
+                                    <button class="rewind__item" type="button" aria-label="slide 4"></button>
+                                </div>
+                                <a href="" class="slider__arrow" aria-label="go to next film">
+                                    <img src="img/right.png" alt="icon right arrow">
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="our-genres__collect collection">
+                            <li>
+                                <article>
+                                    <a href="#" class="movies-collection">
+                                        <div class="movies-collection__posters">
+                                            <div class="movies-collection__img"><img src="img/action/action-01.webp" alt="action movie cover"></div>
+                                            <div class="movies-collection__img"><img src="img/action/action-02.webp" alt="action movie cover"></div>
+                                            <div class="movies-collection__img"><img src="img/action/action-03.webp" alt="action movie cover"></div>
+                                            <div class="movies-collection__img"><img src="img/action/action-04.webp" alt="action movie cover"></div>
+                                            
+                                            
+                                        </div>
+                                        <div class="movies-collection__genre"><p>Action</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+                                                <path d="M6.22461 15L24.9746 15M24.9746 15L16.5371 6.5625M24.9746 15L16.5371 23.4375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </svg></div>
+
+                                    </a>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <a href="#" class="movies-collection">
+                                        <div class="movies-collection__posters">
+                                            <div class="movies-collection__img"><img src="img/adventure/adventure-01.webp" alt="adventure movie cover"></div>
+                                            <div class="movies-collection__img"><img src="img/adventure/adventure-02.webp" alt="adventure movie cover"></div>
+                                            <div class="movies-collection__img"><img src="img/adventure/adventure-03.webp" alt="adventure movie cover"></div>
+                                            <div class="movies-collection__img"><img src="img/adventure/adventure-04.webp" alt="adventure movie cover"></div>
+                                            
+                                            
+                                        </div>
+                                        <div class="movies-collection__genre"><p>Adventure</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+                                                <path d="M6.22461 15L24.9746 15M24.9746 15L16.5371 6.5625M24.9746 15L16.5371 23.4375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </svg></div>
+
+                                    </a>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <a href="#" class="movies-collection">
+                                        <div class="movies-collection__posters">
+                                            <div class="movies-collection__img"><img src="img/comedy/comedy-01.webp" alt="comedy movie cover"></div>
+                                            <div class="movies-collection__img"><img src="img/comedy/comedy-02.webp" alt="comedy movie cover"></div>
+                                            <div class="movies-collection__img"><img src="img/comedy/comedy-03.webp" alt="comedy movie cover"></div>
+                                            <div class="movies-collection__img"><img src="img/comedy/comedy-04.webp" alt="comedy movie cover"></div>
+                                           
+                                            
+                                        </div>
+                                        <div class="movies-collection__genre"><p>Comedy</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+                                                <path d="M6.22461 15L24.9746 15M24.9746 15L16.5371 6.5625M24.9746 15L16.5371 23.4375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </svg></div>
+
+                                    </a>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <a href="#" class="movies-collection">
+                                        <div class="movies-collection__posters">
+                                            <div class="movies-collection__img"><img src="img/drama/drama-01.webp" alt="drama movie cover"></div>
+                                            <div class="movies-collection__img"><img src="img/drama/drama-02.webp" alt="drama movie cover"></div>
+                                            <div class="movies-collection__img"><img src="img/drama/drama-03.webp" alt="drama movie cover"></div>
+                                            <div class="movies-collection__img"><img src="img/drama/drama-04.webp" alt="drama movie cover"></div>
+                                            
+                                            
+                                        </div>
+                                        <div class="movies-collection__genre"><p>Drama</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+                                                <path d="M6.22461 15L24.9746 15M24.9746 15L16.5371 6.5625M24.9746 15L16.5371 23.4375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </svg></div>
+
+                                    </a>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <a href="#" class="movies-collection">
+                                        <div class="movies-collection__posters">
+                                            <div class="movies-collection__img"><img src="img/horror/horror-01.webp" alt="horror movie cover"></div>
+                                            <div class="movies-collection__img"><img src="img/horror/horror-04.webp" alt="horror movie cover"></div>
+                                            <div class="movies-collection__img"><img src="img/horror/horror-02.webp" alt="horror movie cover"></div>
+                                            <div class="movies-collection__img"><img src="img/horror/horror-03.webp" alt="horror movie cover"></div>
+                                        </div>
+                                        <div class="movies-collection__genre"><p>Horror</p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+                                                <path d="M6.22461 15L24.9746 15M24.9746 15L16.5371 6.5625M24.9746 15L16.5371 23.4375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                              </svg></div>
+                                    </a>
+                                </article>
+                            </li>
+                            
+                        </ul>
+                    </section>
+                    <section class="popular">
+                        <div class="popular__header top-title">
+                            <h2 class="top-title__title">Popular Top 10 In Genres</h2>
+                            <div class="top-title__navigation slider">
+                                <a href="" class="slider__arrow" aria-label="go to previous film">
+                                    <img src="img/left.png" alt="icon left arrow">
+                                </a>
+                                <div class="slider__rewind rewind">
+                                    <button class="rewind__item rewind__item--red" type="button" aria-label="slide 1"></button>
+                                    <button class="rewind__item" type="button" aria-label="slide 2"></button>
+                                    <button class="rewind__item" type="button" aria-label="slide 3"></button>
+                                    <button class="rewind__item" type="button" aria-label="slide 4"></button>
+                                </div>
+                                <a href="" class="slider__arrow" aria-label="go to next film">
+                                    <img src="img/right.png" alt="icon right arrow">
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="popular__collect collection">
+                            <li>
+                                <article>
+                                    <a href="#" class="movies-collection">
+                                        <div class="movies-collection__posters movies-collection__posters--square">
+                                            <div class="movies-collection__img movies-collection__img--square"><img src="img/action-top/action-top-01.webp" alt="action-top movie cover"></div>
+                                            <div class="movies-collection__img movies-collection__img--square"><img src="img/action-top/action-top-02.webp" alt="action-top movie cover"></div>
+                                            <div class="movies-collection__img movies-collection__img--square"><img src="img/action-top/action-top-03.webp" alt="action-top movie cover"></div>
+                                            <div class="movies-collection__img movies-collection__img--square"><img src="img/action-top/action-top-04.webp" alt="action-top movie cover"></div>
+                                        </div>
+                          
+                                <div class="movies-collection__genre">
+                                    <div class="movies-collection__top-in">
+                                        <span>Top 10 In</span>
+                                        <p>Action</p>
+                                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+                                        <path d="M6.22461 15L24.9746 15M24.9746 15L16.5371 6.5625M24.9746 15L16.5371 23.4375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                    </div>
+                                </a>
+                            </article>
+                        </li>
+                        <li>
+                            <article>
+                                <a href="#" class="movies-collection">
+                                    <div class="movies-collection__posters movies-collection__posters--square">
+                                        <div class="movies-collection__img movies-collection__img--square"><img src="img/adventure-top/adventure-top-01.webp" alt="adventure-top movie cover"></div>
+                                        <div class="movies-collection__img movies-collection__img--square"><img src="img/adventure-top/adventure-top-02.webp" alt="adventure-top movie cover"></div>
+                                        <div class="movies-collection__img movies-collection__img--square"><img src="img/adventure-top/adventure-top-04.webp" alt="adventure-top movie cover"></div>
+                                        <div class="movies-collection__img movies-collection__img--square"><img src="img/adventure-top/adventure-top-03.webp" alt="adventure-top movie cover"></div>
+                                       
+                                    </div>
+                            <div class="movies-collection__genre">
+                                <div class="movies-collection__top-in">
+                                    <span>Top 10 In</span>
+                                    <p>Adventure</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+                                    <path d="M6.22461 15L24.9746 15M24.9746 15L16.5371 6.5625M24.9746 15L16.5371 23.4375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                </div>
+                            </a>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <a href="#" class="movies-collection">
+                                <div class="movies-collection__posters movies-collection__posters--square">
+                                    <div class="movies-collection__img movies-collection__img--square"><img src="img/comedy-top/comedy-top-01.webp" alt="comedy-top movie cover"></div>
+                                    <div class="movies-collection__img movies-collection__img--square"><img src="img/comedy-top/comedy-top-02.webp" alt="comedy-top movie cover"></div>
+                                    <div class="movies-collection__img movies-collection__img--square"><img src="img/comedy-top/comedy-top-04.webp" alt="comedy-top movie cover"></div>
+                                    <div class="movies-collection__img movies-collection__img--square"><img src="img/comedy-top/comedy-top-03.webp" alt="comedy-top movie cover"></div>
+                                    
+                                </div>
+                        <div class="movies-collection__genre">
+                            <div class="movies-collection__top-in">
+                                <span>Top 10 In</span>
+                                <p>Comedy</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+                                <path d="M6.22461 15L24.9746 15M24.9746 15L16.5371 6.5625M24.9746 15L16.5371 23.4375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <a href="#" class="movies-collection">
+                            <div class="movies-collection__posters movies-collection__posters--square">
+                                <div class="movies-collection__img movies-collection__img--square"><img src="img/drama-top/drama-top-01.webp" alt="drama-top movie cover"></div>
+                                <div class="movies-collection__img movies-collection__img--square"><img src="img/drama-top/drama-top-02.webp" alt="drama-top movie cover"></div>
+                                <div class="movies-collection__img movies-collection__img--square"><img src="img/drama-top/drama-top-04.webp" alt="drama-top movie cover"></div>
+                                <div class="movies-collection__img movies-collection__img--square"><img src="img/drama-top/drama-top-03.webp" alt="drama-top movie cover"></div>
+                                
+                            </div>
+                    <div class="movies-collection__genre">
+                        <div class="movies-collection__top-in">
+                            <span>Top 10 In</span>
+                            <p>Drama</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="31" height="30" viewBox="0 0 31 30" fill="none">
+                            <path d="M6.22461 15L24.9746 15M24.9746 15L16.5371 6.5625M24.9746 15L16.5371 23.4375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </div>
+                    </a>
+                </article>
+            </li>
+                        </ul>
+
+                    </section>
+                    <section class="trending">
+                        <div class="trending__header top-title">
+                            <h2 class="top-title__title">Trending Now</h2>
+                            <div class="top-title__navigation slider">
+                                <a href="" class="slider__arrow" aria-label="go to previous film">
+                                    <img src="img/left.png" alt="icon left arrow">
+                                </a>
+                                <div class="slider__rewind rewind">
+                                    <button class="rewind__item rewind__item--red" type="button" aria-label="slide 1"></button>
+                                    <button class="rewind__item" type="button" aria-label="slide 2"></button>
+                                    <button class="rewind__item" type="button" aria-label="slide 3"></button>
+                                    <button class="rewind__item" type="button" aria-label="slide 4"></button>
+                                </div>
+                                <a href="" class="slider__arrow" aria-label="go to next film">
+                                    <img src="img/right.png" alt="icon right arrow">
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="popular__collect collection collection--gap">
+                            <li><article><a href="#" class="movie">
+                                <div class="movie__img"><img src="img/morbius.webp" alt="poster film morbius"></div>
+                                <div class="movie__rating rating">
+                                    <div class="rating__time">1h 30min</div>
+                                    <div class="rating__watch">2K</div>
+                                </div>
+                            </a></article></li>
+                            <li><article><a href="#" class="movie">
+                                <div class="movie__img"><img src="img/bhai-jaan.webp" alt="poster film bhai-jaan"></div>
+                                <div class="movie__rating rating">
+                                    <div class="rating__time">1h 57min</div>
+                                    <div class="rating__watch">1.5K</div>
+                                </div>
+                            </a></article></li>
+                            <li><article><a href="#" class="movie">
+                                <div class="movie__img"><img src="img/suraj.webp" alt="poster film suraj"></div>
+                                <div class="movie__rating rating">
+                                    <div class="rating__time">2h 10min</div>
+                                    <div class="rating__watch">1.8K</div>
+                                </div>
+                            </a></article></li>
+                            <li><article><a href="#" class="movie">
+                                <div class="movie__img"><img src="img/pathan.webp" alt="poster film pathan"></div>
+                                <div class="movie__rating rating">
+                                    <div class="rating__time">2h 20min</div>
+                                    <div class="rating__watch">3K</div>
+                                </div>
+                            </a></article></li>
+                            <li><article><a href="#" class="movie">
+                                <div class="movie__img"><img src="img/ant-man.webp" alt="poster film ant-man"></div>
+                                <div class="movie__rating rating">
+                                    <div class="rating__time">1h 42min</div>
+                                    <div class="rating__watch">5K</div>
+                                </div>
+                            </a></article></li>
+                            
+                        </ul>
+                    </section>
+                    <section class="new-release">
+                        <div class="new-release__header top-title">
+                            <h2 class="top-title__title">New Releases</h2>
+                            <div class="top-title__navigation slider">
+                                <a href="" class="slider__arrow" aria-label="go to previous film">
+                                    <img src="img/left.png" alt="icon left arrow">
+                                </a>
+                                <div class="slider__rewind rewind">
+                                    <button class="rewind__item rewind__item--red" type="button" aria-label="slide 1"></button>
+                                    <button class="rewind__item" type="button" aria-label="slide 2"></button>
+                                    <button class="rewind__item" type="button" aria-label="slide 3"></button>
+                                    <button class="rewind__item" type="button" aria-label="slide 4"></button>
+                                </div>
+                                <a href="" class="slider__arrow" aria-label="go to next film">
+                                    <img src="img/right.png" alt="icon right arrow">
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="popular__collect collection collection--gap">
+                            <li><article><a href="#" class="movie">
+                                <div class="movie__img"><img src="img/adipurash.webp" alt="poster film adipurash"></div>
+                                <div class="movie__rating relise">
+                                    <div class="relise__date"><p>Released at <time datetime="2023-04-14">14 April 2023</time> </p></div>
+                                </div>
+                            </a></article></li>
+                            <li><article><a href="#" class="movie">
+                                <div class="movie__img"><img src="img/gun.webp" alt="poster film gun"></div>
+                                <div class="movie__rating relise">
+                                    <div class="relise__date"><p>Released at <time datetime="2023-04-22"> 22 April 2023</time></p></div>
+                                </div>
+                            </a></article></li>
+                            <li><article><a href="#" class="movie">
+                                <div class="movie__img"><img src="img/sin-city.webp" alt="poster film sin-city"></div>
+                                <div class="movie__rating relise">
+                                    <div class="relise__date"><p>Released at <time datetime="2023-04-13">13 April 2023</time></p></div>
+                                </div>
+                            </a></article></li>
+                            <li><article><a href="#" class="movie">
+                                <div class="movie__img"><img src="img/tomorrow-war.webp" alt="poster film tomorrow war"></div>
+                                <div class="movie__rating relise">
+                                    <div class="relise__date"><p>Released at <time datetime="2023-04-19"> 19 April 2023</time></p></div>
+                                </div>
+                            </a></article></li>
+                            <li><article><a href="#" class="movie">
+                                <div class="movie__img"><img src="img/misfire.webp" alt="poster film misfire"></div>
+                                <div class="movie__rating relise">
+                                    <div class="relise__date"><p>Released at <time datetime="2023-04-11">11 April 2023</time> </p></div>
+                                </div>
+                            </a></article></li>
+                            
+                        </ul>
+                        
+                    </section>
+                    <section class="must-watch">
+                        <div class="must-watch__header top-title">
+                            <h2 class="top-title__title">Must - Watch Movies</h2>
+                            <div class="top-title__navigation slider">
+                                <a href="" class="slider__arrow" aria-label="go to previous film">
+                                    <img src="img/left.png" alt="icon left arrow">
+                                </a>
+                                <div class="slider__rewind rewind">
+                                    <button class="rewind__item rewind__item--red" type="button" aria-label="slide 1"></button>
+                                    <button class="rewind__item" type="button" aria-label="slide 2"></button>
+                                    <button class="rewind__item" type="button" aria-label="slide 3"></button>
+                                    <button class="rewind__item" type="button" aria-label="slide 4"></button>
+                                </div>
+                                <a href="" class="slider__arrow" aria-label="go to next film">
+                                    <img src="img/right.png" alt="icon right arrow">
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="popular__collect collection collection--gap">
+                            <li><article><a href="#" class="movie">
+                                <div class="movie__img movie__img--big"><img src="img/kantara.webp" alt="poster film kantara"></div>
+                                <div class="movie__rating rating">
+                                    <div class="rating__time">1h 57min</div>
+                                    <div class="rating__stars">
+                                        <img class="rating__star" src="img/star.png" alt="red star">
+                                        <img class="rating__star" src="img/star.png" alt="red star">
+                                        <img class="rating__star" src="img/star.png" alt="red star">
+                                        <img class="rating__star" src="img/star.png" alt="red star">
+                                        <img class="rating__star" src="img/halfstar.png" alt="red star">
+                                        <p>20K</p>
+                                    </div>
+                                </div>
+                            </a></article></li>
+                            <li><article><a href="#" class="movie">
+                                <div class="movie__img movie__img--big"><img src="img/pushpa.webp" alt="poster film pushpa"></div>
+                                <div class="movie__rating rating">
+                                    <div class="rating__time">1h 30min</div>
+                                    <div class="rating__stars">
+                                        <img class="rating__star" src="img/star.png" alt="red star">
+                                        <img class="rating__star" src="img/star.png" alt="red star">
+                                        <img class="rating__star" src="img/star.png" alt="red star">
+                                        <img class="rating__star" src="img/star.png" alt="red star">
+                                        <img class="rating__star" src="img/whitestar.png" alt="white star star">
+                                        <p>20K</p>
+                                    </div>
+                                </div>
+                            </a></article></li>
+                            <li><article><a href="#" class="movie">
+                                <div class="movie__img movie__img--big"><img src="img/blade.webp" alt="poster film blade runner 2049"></div>
+                                <div class="movie__rating rating">
+                                    <div class="rating__time">1h 42min</div>
+                                    <div class="rating__stars">
+                                        <img class="rating__star" src="img/star.png" alt="red star">
+                                        <img class="rating__star" src="img/star.png" alt="red star">
+                                        <img class="rating__star" src="img/star.png" alt="red star">
+                                        <img class="rating__star" src="img/star.png" alt="red star">
+                                        <img class="rating__star" src="img/halfstar.png" alt="white star star">
+                                        <p>20K</p>
+                                    </div>
+                                </div>
+                            </a></article></li>
+                            <li><article><a href="#" class="movie">
+                                <div class="movie__img movie__img--big"><img src="img/adipurash.webp" alt="poster film adipurash"></div>
+                                <div class="movie__rating rating">
+                                    <div class="rating__time">2h 10min</div>
+                                    <div class="rating__stars">
+                                        <img class="rating__star" src="img/star.png" alt="red star">
+                                        <img class="rating__star" src="img/star.png" alt="red star">
+                                        <img class="rating__star" src="img/star.png" alt="red star">
+                                        <img class="rating__star" src="img/star.png" alt="red star">
+                                        <img class="rating__star" src="img/whitestar.png" alt="white star star">
+                                        <p>20K</p>
+                                    </div>
+                                </div>
+                            </a></article></li>
+                        </ul>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            
+        </div>
+    </footer>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
