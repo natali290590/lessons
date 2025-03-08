@@ -912,9 +912,9 @@ svg path {
   -webkit-transform-origin: bottom;
       -ms-transform-origin: bottom;
           transform-origin: bottom;
-  -webkit-transform: scaleY(1.0);
-      -ms-transform: scaleY(1.0);
-          transform: scaleY(1.0);
+  -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
@@ -922,9 +922,9 @@ svg path {
 }
 @media (any-hover: hover) {
   .movies-collection__posters:hover::before {
-    -webkit-transform: scaleY(0.0);
-        -ms-transform: scaleY(0.0);
-            transform: scaleY(0.0);
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
   }
 }
 .movies-collection__img {
