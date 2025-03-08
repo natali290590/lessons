@@ -1090,7 +1090,7 @@ svg path {
 .movie__img--big {
   aspect-ratio: 318/404;
   max-width: 19.875rem;
-  min-inline-size: 12.9375rem;
+  min-inline-size: 14.375rem;
 }
 
 .rating {
@@ -1113,17 +1113,12 @@ svg path {
 }
 @media (min-width: 20em) and (max-width: 101.5625em) {
   .rating {
-    font-size: clamp( 0.625rem , 0.533045977rem  +  0.4597701149vw , 1rem );
+    font-size: clamp( 0.75rem , 0.688697318rem  +  0.30651341vw , 1rem );
   }
 }
 @media (max-width: 20em) {
   .rating {
-    font-size: 0.625rem;
-  }
-}
-@media (max-width: 87.5em) {
-  .rating {
-    font-size: 0.625rem;
+    font-size: 0.75rem;
   }
 }
 .rating__time {
@@ -1206,27 +1201,36 @@ svg path {
 }
 @media (min-width: 20em) and (max-width: 101.5625em) {
   .rating__stars {
-    padding-inline: clamp( 0.5rem , 0.469348659rem  +  0.153256705vw , 0.625rem );
+    padding-inline: clamp( 0.375rem , 0.313697318rem  +  0.30651341vw , 0.625rem );
   }
 }
 @media (max-width: 20em) {
   .rating__stars {
-    padding-inline: 0.5rem;
+    padding-inline: 0.375rem;
   }
 }
 .rating__star {
   aspect-ratio: 1;
-  max-width: 1.125rem;
+}
+@media (min-width: 101.5625em) {
+  .rating__star {
+    max-width: 1.125rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 101.5625em) {
+  .rating__star {
+    max-width: clamp( 0.625rem , 0.502394636rem  +  0.6130268199vw , 1.125rem );
+  }
+}
+@media (max-width: 20em) {
+  .rating__star {
+    max-width: 0.625rem;
+  }
 }
 .rating__star img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-}
-@media (max-width: 75em) {
-  .rating__star {
-    width: 0.75rem;
-  }
 }
 
 .relise {
