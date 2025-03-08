@@ -85,7 +85,7 @@ body .wrapper main {
   padding-block: 0.625rem;
   gap: 1rem;
 }
-@media (max-width: 57.5em) {
+@media (max-width: 61.99875em) {
   .header__container {
     min-height: 5rem;
   }
@@ -108,7 +108,7 @@ body .wrapper main {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 27.5em) {
+@media (max-width: 29.99875em) {
   .logo__text {
     display: none;
   }
@@ -117,7 +117,7 @@ body .wrapper main {
 .menu {
   justify-self: center;
 }
-@media (max-width: 57.5em) {
+@media (max-width: 61.99875em) {
   .menu__body {
     position: fixed;
     inset-inline-start: 100%;
@@ -165,7 +165,7 @@ body .wrapper main {
   border: 0.25rem solid #1F1F1F;
   background-color: #0f0f0f;
 }
-@media (max-width: 57.5em) {
+@media (max-width: 61.99875em) {
   .menu__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -207,7 +207,7 @@ body .wrapper main {
     padding: 0.625rem 1.125rem;
   }
 }
-@media (max-width: 57.5em) {
+@media (max-width: 61.99875em) {
   .menu__link {
     font-size: 1.5rem;
     padding: 0;
@@ -221,7 +221,7 @@ body .wrapper main {
   color: #fff;
   background-color: #1A1A1A;
 }
-@media (max-width: 57.5em) {
+@media (max-width: 61.99875em) {
   .menu__link.active {
     text-decoration: underline;
     background-color: transparent;
@@ -245,7 +245,7 @@ body .wrapper main {
           column-gap: 2.5rem;
   row-gap: 0.25rem;
 }
-@media (max-width: 27.5em) {
+@media (max-width: 29.99875em) {
   .actions-header {
     -webkit-column-gap: 0.75rem;
        -moz-column-gap: 0.75rem;
@@ -273,7 +273,7 @@ body .wrapper main {
 .icon-menu {
   display: none;
 }
-@media (max-width: 57.5em) {
+@media (max-width: 61.99875em) {
   .icon-menu {
     -ms-flex-negative: 0;
         flex-shrink: 0;
@@ -301,7 +301,7 @@ body .wrapper main {
   }
 }
 
-@media (max-width: 57.5em) {
+@media (max-width: 61.99875em) {
   .open-menu .menu__body,
   .open-menu .menu__body::before {
     inset-inline-start: 0;
@@ -432,17 +432,17 @@ body .wrapper main {
     padding-bottom: 0.625rem;
   }
 }
-@media (min-width: 41.25em) and (min-width: 101.5625em) {
+@media (min-width: 47.99875em) and (min-width: 101.5625em) {
   .hero__content {
     padding-inline: 7.5rem;
   }
 }
-@media (min-width: 41.25em) and (min-width: 20em) and (max-width: 101.5625em) {
+@media (min-width: 47.99875em) and (min-width: 20em) and (max-width: 101.5625em) {
   .hero__content {
     padding-inline: clamp( 0.125rem , -1.6834291188rem  +  9.0421455939vw , 7.5rem );
   }
 }
-@media (min-width: 41.25em) and (max-width: 20em) {
+@media (min-width: 47.99875em) and (max-width: 20em) {
   .hero__content {
     padding-inline: 0.125rem;
   }
@@ -511,7 +511,7 @@ body .wrapper main {
           justify-content: space-between;
   gap: 1.25rem;
 }
-@media (max-width: 35em) {
+@media (max-width: 29.99875em) {
   .nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -712,7 +712,7 @@ body .wrapper main {
     padding: 0.9375rem;
   }
 }
-@media (max-width: 37.5em) {
+@media (max-width: 47.99875em) {
   .movies__content {
     border: none;
   }
@@ -732,7 +732,7 @@ body .wrapper main {
     background-color: rgba(175, 2, 2, 0.8);
   }
 }
-@media (max-width: 43.75em) {
+@media (max-width: 47.99875em) {
   .movies__link {
     display: none;
   }
@@ -808,7 +808,7 @@ body .wrapper main {
     padding: 0.75rem;
   }
 }
-@media (max-width: 43.75em) {
+@media (max-width: 47.99875em) {
   .top-title__navigation {
     display: none;
   }
@@ -1238,19 +1238,23 @@ svg path {
 .relise__date {
   text-align: center;
   color: #999;
-  font-size: 1rem;
   font-weight: 500;
 }
-.relise__date time {
-  color: #BFBFBF;
-}
-@media (max-width: 90.625em) {
+@media (min-width: 101.5625em) {
   .relise__date {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
-@media (max-width: 75em) {
+@media (min-width: 20em) and (max-width: 101.5625em) {
+  .relise__date {
+    font-size: clamp( 0.625rem , 0.533045977rem  +  0.4597701149vw , 1rem );
+  }
+}
+@media (max-width: 20em) {
   .relise__date {
     font-size: 0.625rem;
   }
+}
+.relise__date time {
+  color: #BFBFBF;
 }
