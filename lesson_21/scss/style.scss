@@ -26,6 +26,9 @@ $bg6-color: #333;
 $bg7-color: #BFBFBF;
 $base-transition: 0.3s ease;
 $font-family: 'Manrope',  sans-serif;
+$tablet: toEm(991.98); // Планшети, деякі телефони в горизонтальному положенні
+$mobile: toEm(767.98); // Телефони L
+$mobileSmall: toEm(479.98); // Телефони S
 
 
 body {
@@ -67,7 +70,7 @@ body {
       padding-block: toRem(10);
       gap: toRem(16);
 
-      @media (max-width: toEm(920)) {
+      @media (max-width: $tablet) {
          min-height: toRem(80);
       } 
    }
@@ -86,7 +89,7 @@ body {
    }
 
    &__text {
-      @media (max-width: toEm(440)){
+      @media (max-width: $mobileSmall){
          display: none;
       }
    } 
@@ -98,7 +101,7 @@ body {
  // .menu__body
 
    &__body {
-      @media (max-width: toEm(920)){
+      @media (max-width: $tablet){
       position: fixed;
 		inset-inline-start: 100%;
 		inset-block-start: 0;
@@ -138,7 +141,7 @@ body {
       border: toRem(4) solid $border-color;
       background-color: $bg3-color;
 
-      @media (max-width: toEm(920)) {
+      @media (max-width: $tablet) {
          flex-direction: column;
          border: none;
          align-items: flex-end;
@@ -161,7 +164,7 @@ body {
          padding: toRem(10) toRem(18);
       }
    
-      @media (max-width: toEm(920)) {
+      @media (max-width: $tablet) {
          font-size: toRem(24);
          padding: 0;
       }
@@ -175,7 +178,7 @@ body {
          color: $main-color;
          background-color: $bg2-color;
 
-         @media (max-width: toEm(920)){
+         @media (max-width: $tablet){
             text-decoration: underline;  
          background-color: transparent;
          }
@@ -192,7 +195,7 @@ body {
    column-gap: toRem(40);
    row-gap: toRem(4);
 
-   @media (max-width: toEm(440)){ 
+   @media (max-width: $mobileSmall){ 
       column-gap: toRem(12);
    }
  
@@ -224,7 +227,7 @@ body {
 .icon-menu {
    display: none;
 
-   @media (max-width: toEm(920)) {
+   @media (max-width: $tablet) {
       flex-shrink: 0;
 		flex-basis: toRem(36);
 		display: flex;
@@ -249,7 +252,7 @@ body {
    }
 }
 
-@media (max-width: toEm(920)) {
+@media (max-width: $tablet) {
 	.open-menu .menu__body,
 	.open-menu .menu__body::before {
 		inset-inline-start: 0;
@@ -341,7 +344,7 @@ body {
       @include adaptiveValue ("padding-bottom", 40, 10);
       // padding-bottom: clamp(0.625rem, 0.154rem + 2.35vw, 2.5rem);
 
-      @media (min-width: toEm(660)){
+      @media (min-width: $mobile){
          @include adaptiveValue ("padding-inline", 120, 2);
          // padding-inline: clamp(0.125rem, -0.319rem + 7.84vw, 7.5rem);
       }
@@ -381,7 +384,7 @@ body {
    justify-content: space-between;
    gap: toRem(20);
 
-   @media (max-width: toEm(560)){
+   @media (max-width: $mobileSmall){
       flex-direction: column;
    }
 
@@ -534,7 +537,7 @@ body {
       @include adaptiveValue ("padding", 50, 15);
       // padding: clamp(0.938rem, 0.388rem + 2.75vw, 3.125rem);
 
-      @media (max-width: toEm(600)) {
+      @media (max-width: $mobile) {
          border: none;
       }
    }
@@ -556,7 +559,7 @@ body {
          }    
       }
       
-      @media (max-width: toEm(700)) {
+      @media (max-width: $mobile) {
          display: none;
       }
    }
@@ -589,7 +592,7 @@ body {
       @include adaptiveValue ("padding", 16, 12);
       // padding: clamp(0.75rem, 0.687rem + 0.31vw, 1rem);
 
-      @media (max-width:toEm(700)) {
+      @media (max-width: $mobile) {
          display: none;
       }
    }
@@ -865,21 +868,13 @@ svg {
    &__date {
       text-align: center;
       color: $secondary-color;
-      font-size: 1rem;
       font-weight: 500;
+      @include adaptiveValue("font-size", 16, 10); 
 
       // .relise__date time
 
       time {
          color:  $bg7-color;
-      }
-      
-      @media(max-width: toEm(1450)){
-         font-size: toRem(12);
-      }
-
-      @media(max-width: toEm(1200)){
-         font-size: toRem(10);
       }
    }
 }
